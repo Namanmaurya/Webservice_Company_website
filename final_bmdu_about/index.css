@@ -1,0 +1,544 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.Main_page {
+    margin: 0px 50px;
+    background-color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.navbar .logo {
+    width: 144px;
+    height: 66px;
+}
+
+.navbar .logo a img {
+    width: 100%;
+}
+
+.navbar .menu {
+    display: flex;
+    list-style: none;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+    margin-left: 100px;
+}
+
+.navbar .menu li {
+    position: relative;
+}
+
+.navbar .menu li a {
+    transition: background 0.3s;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.navbar .menu li a:hover {
+    background: #fffdfd;
+}
+
+.navbar .menu .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fffbfb;
+    list-style: none;
+    min-width: 150px;
+}
+
+.navbar .menu .dropdown li {
+    width: 100%;
+}
+
+.navbar .menu .dropdown li a {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.navbar .menu li:hover .dropdown {
+    display: block;
+}
+
+.design-btn {
+    border: 2px solid #000;
+    padding: 5px 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 14px;
+}
+
+
+.menu li a .material-symbols-outlined {
+    font-size: 18px;
+    /* Adjust size of the arrow */
+    margin-left: 5px;
+    /* Add space between text and arrow */
+    vertical-align: middle;
+    /* Align arrow with text */
+}
+
+
+/* Hero section ka design */
+.hero-section {
+
+    padding-top: 170px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Plus Jakarta Sans';
+}
+
+/* .hero_content {
+    max-width: 50%;
+    position: relative;
+    z-index: 2;
+} */
+
+.hero_content h1 {
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.hero_content p {
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 50px;
+}
+
+.content p {
+    margin-top: 15px;
+    font-size: 19px;
+    /* 1.2rem to 19px */
+    position: absolute;
+}
+
+.image-container {
+    max-width: 45%;
+    position: relative;
+}
+
+.image-container img {
+    width: 115%;
+    top: -540px;
+    position: relative;
+    right: -560px;
+}
+
+.image-container .play-button {
+    right: -50px;
+    bottom: 50px;
+}
+
+.image-container .play-button   .playicon {
+    left: 493px;
+}
+
+
+.image-overlay {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: white;
+    font-size: 24px;
+    /* 1.5rem to 24px */
+    font-weight: bold;
+    z-index: 3;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.image-overlay-subtext {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+    font-size: 16px;
+    /* 1rem to 16px */
+    font-weight: normal;
+    z-index: 3;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.play-button {
+    position: absolute;
+    bottom: 37px;
+    right: 33px;
+    width: 90px;
+    height: 65px;
+
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.play-button i {
+    border-style: solid;
+    border-width: 0 12px 12px 0;
+    display: inline-block;
+    padding: 8px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    color: black;
+}
+
+
+
+/* Responsive Styles */
+.navbar .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    color: black;
+}
+
+.navbar .hamburger div {
+    width: 25px;
+    height: 3px;
+    background: #000000;
+    margin: 4px 0;
+}
+
+.navbar .menu.responsive {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    background: #fffefe;
+}
+
+.navbar .menu.responsive li {
+    text-align: center;
+}
+
+
+/* Mission and Vision Section */
+.Mission_Visiion {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 30px;
+    padding: 20px 30px;
+    font-family: 'Plus Jakarta Sans';
+    position: relative;
+    top: -450px;
+    
+}
+
+.mandvtexth {
+    font-size: 74px;
+    font-weight: 600;
+    font-family: 'Plus Jakarta Sans';
+}
+
+
+
+.Mission{
+    padding: 20px 30px;
+    
+}
+
+.Vision{
+    padding: 20px 30px;
+}
+
+.mandvtextp{
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    font-weight: 400;
+    font-family: 'Plus Jakarta Sans';
+    padding: 20px 30px;
+}
+
+
+.container {
+
+    font-family: "Poppins", serif;
+}
+
+.Value_container {
+    position: relative;
+    top: -320px;
+    display: flex;
+    margin: 20px 30px;
+}
+
+.Value_container .imgSection{
+    margin-left: 50px;
+
+}
+
+.image-top-circle2 {
+    position: relative;
+    top: -260px;
+    left: 270px;
+    overflow: hidden;
+    width: 308px;
+    height: 430px;
+}
+
+.image-top-circle1 {
+    width: 496px;
+    height: 599px;
+
+}
+
+/* .imgarrgest {
+    position: relative;
+    top: -150px;
+    left: 150px;
+} */
+
+.values-section {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    position: relative;
+    left: -70px;
+}
+
+.values-section h1 {
+    font-size: 74.56px;
+    font-weight: bold;
+}
+
+.values-section p {
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.value-item {
+    font-size: 26px;
+    margin-bottom: 60px;
+    margin-left: 50px;
+}
+
+/* CSS for achievement sections */
+
+.AChi_container {
+    position: relative;
+    top: -350px;
+}
+
+.achievement-item {
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.achi_img {
+    border-radius: 15px;
+    width: 150px;
+    transform: rotate(-15deg);
+    left: 15px;
+}
+
+.achievement-item:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* CSS for image display on hover */
+.achievement-item:hover .achi_img {
+    display: block;
+    /* Show image on hover */
+}
+
+.achievement-item:hover .arrow-btn {
+    background-color: yellow;
+    color: black;
+}
+
+/* Initially hide the image */
+.achi_img {
+    display: none;
+}
+
+/* CSS for arrows */
+.arrow-btn {
+    font-size: 16px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    transform: rotate(-30deg);
+    border: 1px solid black;
+}
+
+
+
+.AChi_container h2 {
+    font-size: 90px;
+    font-weight: 600;
+
+}
+
+
+/* team-section */
+
+
+.team-section {
+     position: relative;
+     top: -200px;
+}
+
+.team-section h2 {
+    font-size: 74px;
+    font-weight: 600;
+}
+
+.team-member {
+    margin-bottom: 30px;
+    align-items: start;
+}
+
+.team-member img {
+    width: 270px;
+    height: 380 px;
+}
+
+.team-member h5 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #777;
+}
+
+.team_down {
+    position: relative;
+    top: 50px;
+}
+
+@media (max-width:1440px) {
+    .image-container img {
+
+        top: -511px;
+        right: -577px;
+    }
+
+    .image-container .play-button .playicon {
+        left: 510px;
+    }
+    .hero_content p {
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .design-btn {
+        display: none;
+    }
+}
+
+@media (max-width:1124px) {
+    .image-container .play-button .playicon {
+        left: 300px;
+    }
+
+    .hero_content h1 {
+        font-size: 42px;
+    }
+
+    .hero_content p {
+        font-size: 17px;
+        margin-left: 3px;
+    }
+
+    .image-container img {
+        top: -320px;
+        right: -370px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .navbar .logo a img {
+        width: 90%;
+    }
+
+    .navbar .menu {
+        display: none;
+    }
+
+    .design-btn {
+        display: none;
+    }
+
+    .navbar .hamburger {
+        display: flex;
+        color: black;
+    }
+
+    .Main_page {
+        margin: 0px 0px;
+    }
+
+    .hero-section {
+        padding: 100px 50px;
+    }
+
+    .hero_content h1 {
+        font-size: 38px;
+    }
+
+    .hero_content p {
+        margin-left: 24px;
+        font-size: 11px;
+    }
+
+    .image-container img {
+        top: -282px;
+        right: -307px;
+    }
+
+    .image-container .play-button .playicon {
+        left: 237px;
+    }
+
+    .Mission_Visiion {
+        top: -350px;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero_content h1 {
+        font-size: 22px;
+    }
+
+    .hero-section {
+        padding: 50px 50px;
+    }
+}
